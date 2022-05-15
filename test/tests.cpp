@@ -1,6 +1,6 @@
-// Copyright 2022 GHA Test Team
+// Copyright 2021 GHA Test Team
 #include <gtest/gtest.h>
-#include "task.h"
+#include "../include/task.h"
 
 
 
@@ -13,7 +13,7 @@ TEST(TEST1, 1) {
     int max_line_len = 5;
     Market FiveyorOchka(cass_number, max_num_of_clients, clients_intensity, serving_speed, average_item_num, max_line_len); 
     FiveyorOchka.start();
-    ASSERT_EQ(result->FiveyorOchka.getAmountOfUnservedCustomers(), 115);
+    ASSERT_EQ(FiveyorOchka.getAmountOfUnservedCustomers(), 115);
 }
 
 TEST(TEST2, 2) {
@@ -25,7 +25,7 @@ TEST(TEST2, 2) {
     int max_line_len = 5;
     Market FiveyorOchka(cass_number, max_num_of_clients, clients_intensity, serving_speed, average_item_num, max_line_len);
     FiveyorOchka.start();
-    ASSERT_EQ(result->FiveyorOchka.getAmountOfServedCustomers(), 5);
+    ASSERT_EQ(FiveyorOchka.getAmountOfServedCustomers(), 5);
 }
 
 TEST(TEST3, 3) {
@@ -37,7 +37,7 @@ TEST(TEST3, 3) {
     int max_line_len = 5;
     Market FiveyorOchka(cass_number, max_num_of_clients, clients_intensity, serving_speed, average_item_num, max_line_len);
     FiveyorOchka.start();
-    ASSERT_EQ(result->FiveyorOchka.getAverageLineLength()(), 1;
+    ASSERT_EQ(FiveyorOchka.getAverageLineLength()(), 1;
 }
 
 TEST(TEST4, 4) {
