@@ -13,7 +13,7 @@ TEST(TEST1, 1) {
     int max_line_len = 5;
     Market FiveyorOchka(cass_number, max_num_of_clients, clients_intensity, serving_speed, average_item_num, max_line_len); 
     FiveyorOchka.start();
-    ASSERT_EQ(FiveyorOchka.getAmountOfUnservedCustomers(), 115);
+    ASSERT_EQ(FiveyorOchka.getAmountOfUnservedClients(), 115);
 }
 
 TEST(TEST2, 2) {
@@ -25,7 +25,7 @@ TEST(TEST2, 2) {
     int max_line_len = 5;
     Market FiveyorOchka(cass_number, max_num_of_clients, clients_intensity, serving_speed, average_item_num, max_line_len);
     FiveyorOchka.start();
-    ASSERT_EQ(FiveyorOchka.getAmountOfServedCustomers(), 5);
+    ASSERT_EQ(FiveyorOchka.getAmountOfServedClients(), 5);
 }
 
 TEST(TEST3, 3) {
