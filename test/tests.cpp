@@ -37,7 +37,7 @@ TEST(TEST3, 3) {
     int max_line_len = 5;
     Market FiveyorOchka(cass_number, max_num_of_clients, clients_intensity, serving_speed, average_item_num, max_line_len);
     FiveyorOchka.start();
-    ASSERT_EQ(FiveyorOchka.getAverageLineLength()(), 1;
+    ASSERT_EQ(FiveyorOchka.getAverageLineLength(), 1;
 }
 
 TEST(TEST4, 4) {
